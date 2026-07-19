@@ -1,149 +1,95 @@
 # MSage's Follower Pet System 6
 
-MSage's Follower Pet System 6 is a Unity Editor tool for installing and managing follower pets on VRChat avatars.
+MSage's Follower Pet System 6 is a Unity Editor tool for installing follower pets onto VRChat avatars.
 
-The installer helps add the follower pet system prefab, animator controllers, expression menu, and expression parameters to a selected VRChat avatar. It can also assign compatible follower pets into pet slots and configure the required slot-specific settings automatically.
-
-## Get Follower Pets
-
-Follower pets are acquired separately from the pet system itself.
-
-You can get compatible MSage follower pets from my shop:
+Follower pets are acquired separately from the pet system itself. You can get compatible pets from my shop:
 
 https://www.payhip.com/msage
 
 ## Requirements
 
-- Unity project using the VRChat SDK3 Avatar SDK
+- Unity project with the VRChat SDK3 Avatar SDK
 - A VRChat avatar with a `VRCAvatarDescriptor`
-- MSage's Follower Pet System 6 imported into the Unity project
-- Compatible MSage follower pet packages imported into the same project
+- MSage's Follower Pet System 6 imported into the project
+- Compatible MSage follower pet packages imported into the project
 
-The installer script must remain inside a Unity `Editor` folder.
+## Opening the Installer
 
-## Installing the Pet System
+After importing the package, open the installer from the Unity top menu:
 
-1. Import `MSageFollowerPets6-v6.0.0.unitypackage` into your Unity project.
-2. Open the installer from the Unity top menu:
+`MSage > Follower Pets > 2.Follower Pet Installer Tool`
 
-   `MSage > Follower Pets > 2.Follower Pet Installer Tool`
+Drag your avatar GameObject into the `Avatar` slot.
 
-3. Drag your VRChat avatar GameObject into the `Avatar` slot.
-4. Click `Install Follower Pet System`.
+## Installing the Follower Pet System
 
-The installer will:
+1. Select your avatar in the installer.
+2. Click `Install Follower Pet System`.
 
-- Add the `Follower Pets` prefab to your avatar.
-- Merge the follower pet FX controller into your avatar's FX layer.
-- Merge the follower pet Action controller into your avatar's Action layer.
-- Create missing avatar FX or Action controllers if needed.
-- Add the follower pet menu to your avatar's main expressions menu.
-- Add required follower pet expression parameters to your avatar's expression parameters asset.
+The installer will add the required follower pet system to your avatar.
 
-If your avatar's main expression menu is already full, remove one main menu option before installing the system.
+If your avatar's main expressions menu is full, remove one option from the main menu before installing.
 
-## Assigning Pets
+## Adding Pets to Your Avatar
 
-Follower pets must be imported into the project separately.
-
-After importing one or more compatible pet packages:
+Before assigning pets, make sure you have imported compatible MSage follower pet packages into the same Unity project.
 
 1. Open the installer.
 2. Select your avatar.
 3. Click `Refresh Pet Listings`.
-4. Under `Follower Pet Selection`, choose a pet for each slot.
+4. Choose a pet from the dropdown for each pet slot.
 5. Click `Assign Pets`.
 
-The installer will:
-
-- Place each selected pet prefab into the correct pet slot.
-- Configure slot-specific contact receiver parameters.
-- Configure slot-specific PhysBone parameters.
-- Configure pet station settings.
-- Merge the selected pet's animation controller into the avatar FX controller.
-- Apply ridable/grounded settings from the pet's identification file.
-
-Selecting `(None)` means no pet will be assigned to that slot.
-
-## Removing Pets
-
-To remove assigned pets without removing the whole pet system:
-
-1. Select your avatar in the installer.
-2. Click `Remove Pets`.
-
-This removes assigned pet prefabs and pet animation layers while keeping the main follower pet system installed.
-
-## Removing the Pet System
-
-To remove the full follower pet system from your avatar:
-
-1. Select your avatar in the installer.
-2. Click `Remove Pet System`.
-
-This removes the follower pet system prefab, installed pet animation layers, follower pet menu entry, and follower pet expression parameters.
+Choosing `(None)` means no pet will be assigned to that slot.
 
 ## Quest Mode
 
-Quest Mode is available in the installer.
+Enable `Quest Mode` if you are setting up a Quest-compatible version.
 
-When `Quest Mode` is enabled:
+When Quest Mode is enabled:
 
-- Only Pet Slot 1 is available.
+- Only Pet Slot 1 can be used.
 - Pet Slots 2, 3, and 4 are disabled.
-- The installer uses the pet prefab inside the pet's `Quest` folder.
-- The remote camera point is removed from the installed follower pet system.
+- The installer uses the Quest version of the selected pet prefab.
 
-Example Quest prefab path:
+## Adjusting Pet Settings
 
-`Assets/MSage's Follower Pets 6/Example Pet/Prefabs/1.Default/Quest/Follower Pet.prefab`
+The `Follower Pet Settings` section lets you quickly select important pet setup objects on your avatar.
 
-## Follower Pet Settings
-
-The installer includes quick selection buttons for adjusting pet settings in the scene.
-
-For each pet slot, you can select:
+Each pet slot includes:
 
 - `Location`
 - `Scale`
 - `Station Point`
 
-These buttons select the correct object on the avatar and activate the appropriate Unity transform tool.
+Clicking one of these buttons selects the related object in the hierarchy and activates the correct transform tool.
 
 ## General Pet Settings
 
-The installer also includes general setting buttons:
+The `General Pet Settings` section includes:
 
 - `Remote Screen`
 - `Other Player Tracker`
 - `Reset Pet Settings`
 
-`Reset Pet Settings` restores pet setting transforms back to their default values.
+Use `Reset Pet Settings` to return pet setting objects back to their default positions, rotations, and scales.
 
-## Updating
+## Removing Pets
 
-This package is updater-ready.
+To remove assigned pets while keeping the pet system installed:
 
-The latest version information is available from:
+1. Select your avatar.
+2. Click `Remove Pets`.
 
-https://raw.githubusercontent.com/MSage3D/FollowerPets6/main/update.json
+## Removing the Pet System
 
-Future versions may allow the installer to check for updates automatically from this GitHub repository.
+To remove the full follower pet system from your avatar:
 
-## Support
+1. Select your avatar.
+2. Click `Remove Pet System`.
 
-For MSage assets and compatible follower pets, visit:
+## Getting More Pets
+
+Compatible follower pets can be purchased separately from my shop:
 
 https://www.payhip.com/msage
-
-## Notes
-
-Do not move the installer script out of the `Editor` folder.
-
-Do not rename or move the core system folders unless an update specifically says it is safe to do so, since the installer depends on known asset paths.
-
-## Version
-
-Current version:
-
-`6.0.0`
