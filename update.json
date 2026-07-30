@@ -1,7 +1,7 @@
 {
-  "latestVersion": "6.0.1",
-  "unityPackageUrl": "https://github.com/MSage3D/FollowerPets6/releases/download/v6.0.1/MSageFollowerPets6-v6.0.1.unitypackage",
-  "releaseNotesUrl": "https://github.com/MSage3D/FollowerPets6/releases/tag/v6.0.1",
-  "sha256": "0C757B41DFF81A5082C88E690DE30210D1CFA70FA2EBF013EC9621B04542A794",
+  "latestVersion": "6.0.2",
+  "unityPackageUrl": "https://github.com/MSage3D/FollowerPets6/releases/download/v6.0.1/MSageFollowerPets6-v6.0.2.unitypackage",
+  "releaseNotesUrl": "https://github.com/MSage3D/FollowerPets6/releases/tag/v6.0.2",
+  "sha256": "090C2F7CAA30410A70BA451D45166AB786270F740A2139F18975A18A0E3E1F19",
   "message": "Updated MSage's Follower Pet System 6."
 }
