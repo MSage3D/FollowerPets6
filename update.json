@@ -1,7 +1,7 @@
 {
-  "latestVersion": "6.0.7",
-  "unityPackageUrl": "https://github.com/MSage3D/FollowerPets6/releases/download/v6.0.7/MSageFollowerPets6-v6.0.7.unitypackage",
-  "releaseNotesUrl": "https://github.com/MSage3D/FollowerPets6/releases/tag/v6.0.7",
-  "sha256": "687376682F2054F27A10B393EB26410E92E000CECB5A1A15B468982FC46A4124",
-  "message": "Updated MSage's Follower Pet System 6.0.7"
+  "latestVersion": "6.0.8",
+  "unityPackageUrl": "https://github.com/MSage3D/FollowerPets6/releases/download/v6.0.8/MSageFollowerPets6-v6.0.8.unitypackage",
+  "releaseNotesUrl": "https://github.com/MSage3D/FollowerPets6/releases/tag/v6.0.8",
+  "sha256": "1E75854E58E2B3B6A8C66C9D8905C5D1FAD59BB72D361A7B5955DF0F052C3E6F",
+  "message": "MSage Follower Pets 6.0.8: MSage Account sign-in and base-pet ownership checks. Existing pet packages remain compatible."
 }

@@ -6,6 +6,12 @@ Follower pets are acquired separately from the pet system itself. You can get co
 
 https://www.payhip.com/msage
 
+## MSage Account sign-in (6.0.8)
+
+Before Assign Pets, sign in from `MSage > Follower Pets > Account & purchases` with a verified MSage Account. Link base-pet purchases at https://msage.co/redeem; older or missing orders can request receipt review. The system remains free and does not require Tara Stick Figure SDK Access.
+
+Existing pet packages do not need updating: the installer reads `Pet.Identification.txt` and its Pet Number. Custom skins require their matching base pet. Checks run before avatar changes; Remove Pets and system setup remain separate tools.
+
 ## Requirements
 
 - Unity project with the VRChat SDK3 Avatar SDK
